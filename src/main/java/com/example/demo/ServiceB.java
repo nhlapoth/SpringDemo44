@@ -1,4 +1,4 @@
-package springdemo3;
+package com.example.demo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -6,15 +6,8 @@ import org.springframework.stereotype.Component;
 @Component //This is a bean
 public class ServiceB implements Service{
     @Autowired  
-    @Qualifier("electricpump")      
-    private Pump mPump; 
-    
-    public Pump getMpump() {
-        return mPump;
-    }
-    public void setMpump(Pump mPump) {
-        this.mPump = mPump;
-    }
+    @Qualifier("electricPump")      
+    private Pump mPump;
 
     public void doSomething() {
         System.out.println("We have a water"

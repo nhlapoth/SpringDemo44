@@ -1,6 +1,8 @@
-package springdemo3;
+package com.example.demo;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+
 /**
  * Here I'm not using XML configuration and using 
  * Singleton Design Pattern
@@ -24,6 +26,5 @@ public class SpringDemo3 {
        //mCliientA.doSomething();
        ServiceB mServiceB = context.getBean(ServiceB.class);
        mServiceB.doSomething();
-     
     }    
 }
